@@ -68,7 +68,7 @@ body {
   /* padding: 5rem; */
 
   background-color: #4e1f6e;
-  width: 12rem;
+  width: 15rem;
   height: 100%;
   border-radius: 1rem;
 }
@@ -250,6 +250,20 @@ body {
 
   margin: auto;
   padding: 1rem;
+}
+
+.block1-title,
+.block2-title,
+.block3-title,
+.block4-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: #f4f2f6;
+  width: 95%;
+  height: 20%;
+  border-radius: 1rem;
 }
 
 .block1-content,
