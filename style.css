@@ -98,7 +98,9 @@ body {
 
 .page1,
 .page2,
-.page3 {
+.page3,
+.page4,
+.page5 {
   display: flex;
   justify-content: space-around;
   align-items: center;
