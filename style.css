@@ -34,7 +34,10 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
   font-size: 1rem;
+  color: #dcccff;
 }
+
+/* Icons styling */
 
 body {
   background-color: #17153b;
@@ -247,14 +250,13 @@ body {
   box-sizing: border-box;
 
   background-color: #433d8b;
-  width: 90%;
+  width: 95%;
   width: 23rem;
   height: 45%;
   border-radius: 1rem;
 
   margin: 1rem;
-  padding: 0.5rem;
-  gap: 1rem;
+  padding: 1rem;
 }
 
 .block1-title,
@@ -265,7 +267,7 @@ body {
   justify-content: left;
   align-items: center;
 
-  background-color: #dcccff;
+  background-color: #433d8b;
   width: 95%;
   height: 20%;
   border-radius: 1rem;
@@ -301,8 +303,8 @@ body {
   align-items: center;
 
   background-color: #dcccff;
-  width: 95%;
-  height: 70%;
+  width: 98%;
+  height: 80%;
   border-radius: 1rem;
 }
 
@@ -314,9 +316,7 @@ body {
   background-color: #dcccff;
   /* width: auto;
   height: auto; */
-  width: 95% !important;
-  height: 70% !important;
+  width: 98% !important;
+  height: 80% !important;
   border-radius: 1rem;
-
-  border-style: 2px solid red;
 }
