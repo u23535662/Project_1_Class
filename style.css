@@ -37,6 +37,16 @@
   color: #dcccff;
 }
 
+.noto-sans-display-quote {
+  font-family: "Noto Sans Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1rem;
+  color: rgb(220, 204, 255);
+  text-align: center;
+}
 .icon-sizes-blocks {
   font-size: 30px;
 }
@@ -319,13 +329,24 @@ body {
 }
 
 .block1-content,
-.block2-content,
 .block3-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
 
   background-color: rgb(220, 204, 255, 0);
+  width: 98%;
+  height: 80%;
+  border-radius: 1rem;
+}
+.block2-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: rgba(188, 182, 202, 0.2);
   width: 98%;
   height: 80%;
   border-radius: 1rem;
