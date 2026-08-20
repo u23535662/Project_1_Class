@@ -37,19 +37,27 @@
   color: #dcccff;
 }
 
+.icon-sizes-blocks {
+  font-size: 30px;
+}
+
 /* Icons styling */
 .fa-solid,
-.fa-rocket,
+.fa-libra,
 .fa-meteor,
 .fa-star,
-.fa-satellite {
-  color: black;
-  aspect-ratio: 1, 1;
-  width: 80%;
+.fa-moon {
+  color: rgb(220, 204, 255);
+  aspect-ratio: 1/1;
+  width: 20%;
+}
+.fa-moon {
+  max-width: 30px;
 }
 
 body {
   background-color: #17153b;
+  background-image: url("assets/Space Star Sticker by littlekingdoms.gif");
   display: flex;
   flex-direction: row;
   /* justify-content: center; */
@@ -99,7 +107,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background-color: #dcccff;
+  background-color: rgb(220, 204, 255);
   /* background: linear-gradient(to right, #491959, #c17fea); */
   width: 90%;
   height: 10%;
@@ -117,7 +125,7 @@ body {
   justify-content: space-around;
   align-items: center;
 
-  background-color: #dcccff;
+  background-color: rgb(220, 204, 255);
   width: 90%;
   height: 33%;
   border-radius: 1rem;
@@ -125,12 +133,34 @@ body {
   margin: auto;
 }
 
+.page1:hover,
+.page2:hover,
+.page3:hover,
+.page4:hover,
+.page5:hover {
+  background-color: rgb(171, 136, 247);
+  color: white;
+
+  transition: 0.2s;
+}
+
+.page1:active,
+.page2:active,
+.page3:active,
+.page4:active,
+.page5:active {
+  background-color: #a30dff;
+  color: white;
+
+  transition: 0.1s;
+}
+
 .accountname {
   display: flex;
   justify-content: space-around;
   align-items: center;
 
-  background-color: #dcccff;
+  background-color: rgb(220, 204, 255);
   /* background: linear-gradient(to right, #c5b3d3, #c17fea); */
   width: 90%;
   height: 8%;
@@ -164,7 +194,7 @@ body {
   width: 100%;
   height: 3rem;
 
-  background-color: #dcccff;
+  background-color: rgb(220, 204, 255);
   border-radius: 1rem;
 }
 
@@ -200,11 +230,12 @@ body {
   flex: 0 0 calc(30% - (1rem / 2));
   box-sizing: border-box;
 
-  background-color: #433d8b;
+  background-color: rgb(67, 61, 139, 0.6);
   /* width: 90%; */
   width: 23rem;
   height: 45%;
   border-radius: 1rem;
+  border: 2px solid #a30dff;
 
   /* margin: auto; */
   margin: 1rem;
@@ -220,11 +251,12 @@ body {
   flex: 0 0 calc(30% - (1rem / 2));
   box-sizing: border-box;
 
-  background-color: #433d8b;
+  background-color: rgb(67, 61, 139, 0.6);
   /* width: 90%; */
   width: 23rem;
   height: 45%;
   border-radius: 1rem;
+  border: 2px solid #a30dff;
 
   margin: 1rem;
   padding: 1rem;
@@ -239,11 +271,12 @@ body {
   flex: 0 0 calc(30% - (1rem / 2));
   box-sizing: border-box;
 
-  background-color: #433d8b;
+  background-color: rgb(67, 61, 139, 0.6);
   /* width: 90%; */
   width: 23rem;
   height: 45%;
   border-radius: 1rem;
+  border: 2px solid #a30dff;
 
   margin: 1rem;
   padding: 1rem;
@@ -258,11 +291,12 @@ body {
   flex: 0 0 calc(100% - (1rem / 2));
   box-sizing: border-box;
 
-  background-color: #433d8b;
+  background-color: rgb(67, 61, 139, 0.6);
   width: 95%;
-  width: 23rem;
   height: 45%;
+  max-height: 20rem;
   border-radius: 1rem;
+  border: 2px solid #a30dff;
 
   margin: 1rem;
   padding: 1rem;
@@ -276,32 +310,12 @@ body {
   justify-content: left;
   align-items: center;
 
-  background-color: #433d8b;
+  background-color: rgb(67, 61, 139, 0);
   width: 95%;
   height: 20%;
   border-radius: 1rem;
-}
 
-.block-icon1,
-.block-icon2,
-.block-icon3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-
-  height: 50%;
-  width: 25%;
-}
-
-.block-icon4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-
-  height: 50%;
-  width: 5%;
+  gap: 0.72rem;
 }
 
 .block1-content,
@@ -311,7 +325,7 @@ body {
   justify-content: space-around;
   align-items: center;
 
-  background-color: #dcccff;
+  background-color: rgb(220, 204, 255, 0);
   width: 98%;
   height: 80%;
   border-radius: 1rem;
@@ -319,13 +333,21 @@ body {
 
 .block4-content {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
-  background-color: #dcccff;
+  background-color: rgb(220, 204, 255, 0);
   /* width: auto;
   height: auto; */
   width: 98% !important;
   height: 80% !important;
   border-radius: 1rem;
+}
+
+.moon {
+  background-image: url(assets/moon-png-44662.png) no-repeat;
+  height: 85%;
+  width: auto;
+  /* box-shadow: 0px 0px 5px white; */
+  filter: drop-shadow(0px 0px 20px rgb(220, 204, 255));
 }
