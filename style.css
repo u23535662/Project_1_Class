@@ -38,6 +38,15 @@
 }
 
 /* Icons styling */
+.fa-solid,
+.fa-rocket,
+.fa-meteor,
+.fa-star,
+.fa-satellite {
+  color: black;
+  aspect-ratio: 1, 1;
+  width: 80%;
+}
 
 body {
   background-color: #17153b;
