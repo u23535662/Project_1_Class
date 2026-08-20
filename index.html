@@ -14,60 +14,81 @@
 
   <body>
     <!--NAV BAR START-->
-    <div class="navbar">
+    <nav class="navbar">
       <div class="dashname">
         <h1 class="noto-sans-display-h1">Dashboard</h1>
       </div>
-
-      <div class="pagename">
-        <div class="page1">
-          <i class="fa-solid fa-tv"></i>
-          <h2 class="noto-sans-display-page">Overview</h2>
-        </div>
-
-        <div class="page2">
-          <i class="fa-solid fa-square-poll-vertical"></i>
-          <h2 class="noto-sans-display-page">Analytics</h2>
-        </div>
-
-        <div class="page3">
-          <i class="fa-solid fa-shuffle"></i>
-          <h2 class="noto-sans-display-page">Flowchart</h2>
-        </div>
-
-        <div class="page4">
-          <i class="fa-solid fa-spider"></i>
-          <h2 class="noto-sans-display-page">Page</h2>
-        </div>
-
-        <div class="page5">
-          <i class="fa-solid fa-spoon"></i>
-          <h2 class="noto-sans-display-page">Page</h2>
-        </div>
-      </div>
-
+      <ul class="navlist">
+        <li class="page1 active">
+          <a href="./index.html" class="noto-sans-display-page active"
+            ><div>
+              <i class="fa-solid fa-tv"></i>
+              Overview
+            </div></a
+          >
+        </li>
+        <li class="page1">
+          <a href="./starSign.html" class="noto-sans-display-page"
+            ><div>
+              <i class="fa-solid fa-square-poll-vertical"></i>
+              Starsign
+            </div></a
+          >
+        </li>
+        <li class="page1">
+          <a href="./moodSummary.html" class="noto-sans-display-page"
+            ><div>
+              <i class="fa-solid fa-shuffle"></i>
+              Mood Tracker
+            </div></a
+          >
+        </li>
+        <li class="page1">
+          <a href="./claendar.html" class="noto-sans-display-page"
+            ><div>
+              <i class="fa-solid fa-spider"></i>
+              Calendar
+            </div></a
+          >
+        </li>
+        <li class="page1">
+          <a href="./notes.html" class="noto-sans-display-page"
+            ><div>
+              <i class="fa-solid fa-spoon"></i>
+              Notes
+            </div></a
+          >
+        </li>
+      </ul>
       <div class="accountname">
         <i class="fa-solid fa-user-astronaut"></i>
         <h3 class="noto-sans-display-h3">Account Name</h3>
       </div>
-    </div>
+    </nav>
     <!-- NAV BAR END -->
 
     <!-- BLOCKS START-->
     <div class="main">
       <header class="header">
         <!-- <div class="top_header"> -->
-        <h2 class="noto-sans-display-h1">Welcome to the Dashboard</h2>
+        <h2 class="noto-sans-display-h1">Overview</h2>
         <!-- </div> -->
       </header>
 
       <div class="blocks">
         <div class="block1">
           <div class="block1-title">
-            <i class="fa-solid fa-libra icon-sizes-blocks"> </i>
+            <i class="fa-solid fa-yin-yang icon-sizes-blocks"> </i>
             <h4 class="noto-sans-display-blocks">Star Sign</h4>
           </div>
-          <div class="block1-content"></div>
+          <div class="block1-content">
+            <p class="noto-sans-display-starsign">Libra</p>
+            <i class="fa-solid fa-libra"></i>
+            <p class="noto-sans-display-quote">
+              Libras want to be admired not for their talents but for their
+              charm.
+            </p>
+          </div>
         </div>
 
         <div class="block2">
@@ -87,10 +108,18 @@
         <div class="block3">
           <div class="block3-title">
             <i class="fa-solid fa-star icon-sizes-blocks"></i>
-
             <h4 class="noto-sans-display-blocks">Mood Tracker</h4>
           </div>
-          <div class="block3-content"></div>
+          <div class="block3-content">
+            <p class="noto-sans-display-quote">
+              You logged your mood as: Happy
+            </p>
+            <i class="fa-solid fa-face-smile-beam"></i>
+            <p class="noto-sans-display-quote">
+              Smiling is contagious!<br />
+              Keep logging your mood for more insights.
+            </p>
+          </div>
         </div>
 
         <div class="block4">
@@ -100,6 +129,13 @@
           </div>
           <div class="block4-content">
             <img src="assets/moon-png-44662.png" class="moon" />
+            <p class="noto-sans-display-starsign">Full Moon</p>
+            <p class="noto-sans-display-quote">
+              Folklore has associated full moons with insomnia,<br />
+              madness, and supernatural events. <br />
+              <br />
+              Watch out for Werewolves tonight!
+            </p>
           </div>
         </div>
       </div>

@@ -26,6 +26,9 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
   font-size: 1rem;
+
+  text-decoration: none;
+  list-style: none;
 }
 .noto-sans-display-blocks {
   font-family: "Noto Sans Display", sans-serif;
@@ -47,13 +50,50 @@
   color: rgb(220, 204, 255);
   text-align: center;
 }
+
+.noto-sans-display-starsign {
+  font-family: "Noto Sans Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.5rem;
+  color: rgb(220, 204, 255);
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.navlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  height: auto;
+
+  /* margin-left: auto; */
+  /* margin-right: 5rem; */
+
+  gap: 1.2rem;
+
+  /* padding: 0; */
+}
+
 .icon-sizes-blocks {
   font-size: 30px;
 }
 
 /* Icons styling */
 .fa-solid,
-.fa-libra,
+.fa-yin-yang,
 .fa-meteor,
 .fa-star,
 .fa-moon {
@@ -63,6 +103,11 @@
 }
 .fa-moon {
   max-width: 30px;
+}
+
+.active {
+  background-color: #a30dff !important;
+  color: white;
 }
 
 body {
@@ -88,7 +133,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: center !important;
   /* align-self: center; */
 
   margin-top: auto;
@@ -126,12 +171,13 @@ body {
   margin: 5%;
 }
 
-.page1,
+/* .page1,
 .page2,
 .page3,
 .page4,
 .page5 {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 
@@ -139,8 +185,25 @@ body {
   width: 90%;
   height: 33%;
   border-radius: 1rem;
-
+  padding: 0.5rem;
   margin: auto;
+} */
+
+.page1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding-left: 0.72rem;
+  padding-right: 0.72rem;
+  padding-top: 0.72rem;
+  padding-bottom: 0.72rem;
+
+  border-radius: 1rem;
+
+  background-color: rgb(220, 204, 255);
+  width: 90%;
+  height: 33%;
 }
 
 .page1:hover,
@@ -327,18 +390,22 @@ body {
 
   gap: 0.72rem;
 }
-
-.block1-content,
-.block3-content {
+.block1-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
 
-  background-color: rgb(220, 204, 255, 0);
+  background-color: rgb(220, 204, 255, 0.2);
   width: 98%;
   height: 80%;
   border-radius: 1rem;
+}
+.fa-libra {
+  color: rgb(220, 204, 255);
+  aspect-ratio: 1/1;
+  width: 20%;
+  font-size: 40px;
 }
 .block2-content {
   display: flex;
@@ -351,11 +418,28 @@ body {
   height: 80%;
   border-radius: 1rem;
 }
+.block3-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 
+  background-color: rgb(220, 204, 255, 0.2);
+  width: 98%;
+  height: 80%;
+  border-radius: 1rem;
+}
+.fa-face-smile-beam {
+  color: rgb(220, 204, 255);
+  aspect-ratio: 1/1;
+  width: 20%;
+  font-size: 30px;
+}
 .block4-content {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-direction: row;
 
   background-color: rgb(220, 204, 255, 0);
   /* width: auto;
@@ -363,6 +447,7 @@ body {
   width: 98% !important;
   height: 80% !important;
   border-radius: 1rem;
+  gap: 5rem;
 }
 
 .moon {
@@ -372,3 +457,124 @@ body {
   /* box-shadow: 0px 0px 5px white; */
   filter: drop-shadow(0px 0px 20px rgb(220, 204, 255));
 }
+
+/* Blocks End */
+
+/* Star Sign Page Start */
+.mainStarSignBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+
+  flex: 0 0 calc(100% - (1rem / 2));
+  box-sizing: border-box;
+
+  background-color: rgb(67, 61, 139, 0.6);
+  height: 80%;
+  width: 98%;
+  border-radius: 1rem;
+  border: 2px solid #a30dff;
+
+  /* margin: auto; */
+  margin: 1rem;
+  padding: 1rem;
+}
+.birthChart {
+  height: 100%;
+  width: auto;
+}
+
+/* Star Sign Page End */
+
+/* Mood Calendar Page Start */
+.moodcalendar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  flex: 0 0 calc(100% - (1rem / 2));
+  box-sizing: border-box;
+
+  background-color: rgb(67, 61, 139, 0.6);
+  height: 80%;
+  width: 98%;
+  border-radius: 1rem;
+  border: 2px solid #a30dff;
+
+  /* margin: auto; */
+  margin: 1rem;
+  padding: 1rem;
+}
+.chart {
+  height: 100%;
+  width: auto;
+}
+.addPad {
+  padding: 1rem;
+}
+/* Mood Calandar Page End */
+
+/* Moon Phase Page Start */
+.fullmoon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  flex: 0 0 calc(100% - (1rem / 2));
+  box-sizing: border-box;
+
+  background-color: rgb(67, 61, 139, 0.6);
+  height: 80%;
+  width: 98%;
+  border-radius: 1rem;
+  border: 2px solid #a30dff;
+
+  /* margin: auto; */
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.flmn {
+  height: 100%;
+  width: auto;
+}
+/* Moon Phase Page End */
+
+/* Notes Page Start */
+.emptyblocks {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  flex-direction: row;
+
+  flex: 0 0 calc(30% - (1rem / 2));
+  box-sizing: border-box;
+
+  background-color: rgb(67, 61, 139, 0.6);
+  height: 80%;
+  width: 98%;
+  border-radius: 1rem;
+  border: 2px solid #a30dff;
+
+  /* margin: auto; */
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.emptyblockstitle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: rgb(67, 61, 139, 0.8);
+  width: 95%;
+  height: 20%;
+  border-radius: 1rem;
+
+  gap: 0.72rem;
+}
+/* Notes Page End */
