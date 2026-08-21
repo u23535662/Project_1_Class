@@ -289,7 +289,7 @@ body {
   flex-wrap: wrap;
 
   width: 100%;
-  height: 100%;
+  height: 90%;
   margin: 5px;
   gap: auto;
 }
@@ -373,6 +373,13 @@ body {
 
   margin: 1rem;
   padding: 1rem;
+}
+
+.block1:hover,
+.block2:hover,
+.block3:hover,
+.block4:hover {
+  background-color: rgb(67, 61, 139);
 }
 
 .block1-title,
@@ -478,7 +485,7 @@ body {
 
   /* margin: auto; */
   margin: 1rem;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .birthChart {
   height: 100%;
@@ -487,7 +494,7 @@ body {
 
 /* Star Sign Page End */
 
-/* Mood Calendar Page Start */
+/* Mood Graph Page Start */
 .moodcalendar {
   display: flex;
   justify-content: space-between;
@@ -506,7 +513,9 @@ body {
   /* margin: auto; */
   margin: 1rem;
   padding: 1rem;
+  gap: 3rem;
 }
+
 .chart {
   height: 100%;
   width: auto;
@@ -514,13 +523,37 @@ body {
 .addPad {
   padding: 1rem;
 }
-/* Mood Calandar Page End */
+
+.addMoodButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  background-color: rgb(220, 204, 255, 0.8);
+  width: 80%;
+
+  border-radius: 1rem;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+
+.addMoodButton:hover {
+  background-color: rgb(171, 136, 247);
+  color: white;
+
+  transition: 0.2s;
+}
+.justrow {
+  flex-direction: row;
+}
+/* Mood Graph Page End */
 
 /* Moon Phase Page Start */
 .fullmoon {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
 
   flex: 0 0 calc(100% - (1rem / 2));
@@ -528,18 +561,38 @@ body {
 
   background-color: rgb(67, 61, 139, 0.6);
   height: 80%;
+
   width: 98%;
   border-radius: 1rem;
   border: 2px solid #a30dff;
 
   /* margin: auto; */
   margin: 1rem;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .flmn {
   height: 100%;
   width: auto;
+}
+
+.moonButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: rgb(220, 204, 255, 0.8);
+  width: 50%;
+  aspect-ratio: 1/1;
+
+  border-radius: 1rem;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+
+.fa-camera {
+  font-size: 50px;
 }
 /* Moon Phase Page End */
 
@@ -554,7 +607,7 @@ body {
   box-sizing: border-box;
 
   background-color: rgb(67, 61, 139, 0.6);
-  height: 80%;
+  height: 40%;
   width: 98%;
   border-radius: 1rem;
   border: 2px solid #a30dff;
