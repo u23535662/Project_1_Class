@@ -19,7 +19,7 @@
 <p align="center">
 
   <a href="https://github.com/u23535662/Project_1_Class">
-    <img src="path/to/logo" alt="Logo" width="140" height="140">
+    <img src="./assets/FullMoon.png" alt="Logo" width="140" height="140">
   </a>
   
   <h3 align="center">Astrology Dashboard</h3>
@@ -29,8 +29,7 @@
       <a href="https://github.com/u23535662/Project_1_Class"><strong>Explore the docs »</strong></a>
    <br />
    <br />
-   <a href="path/to/demonstration/video">View Demo</a>
-    ·
+   .
     <a href="https://github.com/username/projectname/issues">Report Bug</a>
     ·
     <a href="https://github.com/username/projectname/issues">Request Feature</a>
